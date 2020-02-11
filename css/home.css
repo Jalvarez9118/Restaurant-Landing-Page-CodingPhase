@@ -10,6 +10,7 @@
 #welcome .welcome-menu {
   background: white;
   padding: 50px;
+  position: relative;
 }
 
 #welcome .welcome-menu .logo {
@@ -26,6 +27,10 @@
   max-width: 150px;
 }
 
+#welcome .welcome-menu .menu {
+  margin-bottom: 50px;
+}
+
 #welcome .welcome-menu .menu .menu-title {
   text-transform: uppercase;
   color: #0971ce;
@@ -34,6 +39,67 @@
   border-bottom: 1px solid #e2eaef;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+
+#welcome .welcome-menu .menu .links li a {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1.4rem;
+  display: block;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+#welcome .welcome-menu .menu .links li a:hover {
+  color: red;
+}
+
+#welcome .welcome-menu .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#welcome .welcome-menu .social-icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c2c8cc;
+  font-size: .9rem;
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#welcome .welcome-menu .location {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  bottom: 100px;
+}
+
+#welcome .welcome-menu .location .address {
+  color: #7a8d99;
+  margin-bottom: 20px;
+}
+
+#welcome .welcome-menu .location .phone-number a {
+  color: #0971ce;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 #welcome .welcome-jumbo {

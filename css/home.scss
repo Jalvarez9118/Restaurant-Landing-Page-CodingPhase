@@ -10,6 +10,7 @@
     .welcome-menu{
         background: white; 
         padding: 50px;
+        position: relative; 
 
         .logo{
             display: flex; 
@@ -22,6 +23,7 @@
         }
 
         .menu{
+            margin-bottom: 50px;
             .menu-title{
                 text-transform: uppercase; 
                 color: $menu-title; 
@@ -31,10 +33,64 @@
                 padding-bottom: 20px; 
                 margin-bottom: 20px; 
             }
-        }
-    }
 
-    
+            .links{
+                li{
+                    a{
+                        font-size: 1.1rem;
+                        color: black; 
+                        font-weight: 700;
+                        text-decoration: none;
+                        margin-bottom: 1.4rem;
+                        display: block;
+                        transition: color .3s ease-in-out; 
+                        &:hover{
+                            color: $menu-item-hover; 
+                        }
+                    }
+                    
+                }
+            }    
+        }
+
+        .social-icons{
+            display: flex; 
+
+            a{
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                background: $social-background; 
+                font-size: .9rem;
+                text-decoration: none; 
+                color: $social-icons; 
+                height: 30px; 
+                width: 30px; 
+                border-radius: 50%; 
+                margin-right: 10px; 
+            }
+        }
+
+        .location{
+            align-self: center;
+            position: absolute;
+            bottom: 100px;
+
+            .address{
+                color: $address-color; 
+                margin-bottom: 20px; 
+            }
+
+            .phone-number{
+                a{
+                    color: $menu-title; 
+                    font-size: 2rem; 
+                    font-weight: 700; 
+                    text-decoration: none;
+                }
+            }
+        }
+    }    
 
     .welcome-jumbo{
         background: red;  
