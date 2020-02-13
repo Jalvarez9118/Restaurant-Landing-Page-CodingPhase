@@ -92,8 +92,43 @@
         }
     }    
 
-    .welcome-jumbo{
-        background: red;  
+    .welcome-jumbo{ 
+        max-width: 100%; 
+        overflow: hidden;
+        display: flex; 
+        flex-direction: column;  // stack elements above each other 
+        justify-content: center; 
+        align-items: center; 
+        background: #cc3535; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #cc3535 1%, #e88c0b 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, #cc3535 1%,#e88c0b 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, #cc3535 1%,#e88c0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+
+        padding: 100px; 
+
+        .status{
+            display: inline-block; 
+            padding: 10px; 
+            font-size: 1.3rem;
+            font-weight: 700; 
+            color: white; 
+            background: black; 
+            border-radius: 5px; 
+            align-self: flex-start; 
+            margin-bottom: 20px; 
+        }
+
+        h1{
+            font-size: 4rem;
+            font-weight: 900; 
+            align-self: flex-start; 
+            color: white; 
+            margin-bottom: 100px; 
+        }
+
+        .burger-fries{
+            max-width: 1000px; 
+        }
     }
 }
 
