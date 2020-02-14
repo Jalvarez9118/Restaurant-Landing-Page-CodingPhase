@@ -1,5 +1,8 @@
 @import "variables"; 
 
+html{
+    scroll-behavior: smooth;
+}
 
 #welcome{
     display: grid; 
@@ -99,12 +102,14 @@
         flex-direction: column;  // stack elements above each other 
         justify-content: center; 
         align-items: center; 
+        padding: 100px; 
+
+        // ********** GRADIENT BELOW **********
         background: #cc3535; /* Old browsers */
         background: -moz-radial-gradient(center, ellipse cover, #cc3535 1%, #e88c0b 100%); /* FF3.6-15 */
         background: -webkit-radial-gradient(center, ellipse cover, #cc3535 1%,#e88c0b 100%); /* Chrome10-25,Safari5.1-6 */
         background: radial-gradient(ellipse at center, #cc3535 1%,#e88c0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
-
-        padding: 100px; 
+        
 
         .status{
             display: inline-block; 
@@ -127,7 +132,84 @@
         }
 
         .burger-fries{
-            max-width: 1000px; 
+            width: 80%; 
+        }
+    }
+}
+
+#information{
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh; 
+
+    .restaurant-image{
+        overflow: hidden; 
+        
+
+        img{
+            width: 100%; 
+            // max-height: 580px; 
+            // object-fit: cover; // fits the image to dimension given
+            object-position: 0 -130px; // left/right top/bottom
+        }
+    }
+
+    .info{
+        padding: 100px 50px;
+        // use the flex and centering below to center align (vertically/horizontally
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+
+        h2{
+            font-size: 3rem; 
+            font-weight: 700;
+            margin-bottom: 20px; 
+        }
+
+        .paragraphs{
+            display: grid; 
+            grid-template-columns: 50% 50%; // split paragrapsh side by side
+            grid-gap: 20px; // space between grids
+            line-height: 1.7; 
+            color: $address-color; 
+            font-size: 1.1rem; 
+            margin: 2rem; 
+        }
+
+        .about-link{
+            font-size: 1.8rem; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            color: black; 
+            font-weight: 700; 
+
+            span{
+                margin-right: 20px; 
+            }
+
+            .circle-right{
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 40px; 
+                width: 40px; 
+                // ********** GRADIENT BELOW **********
+                background: #cc3535; /* Old browsers */
+                background: -moz-radial-gradient(center, ellipse cover, #cc3535 1%, #e88c0b 100%); /* FF3.6-15 */
+                background: -webkit-radial-gradient(center, ellipse cover, #cc3535 1%,#e88c0b 100%); /* Chrome10-25,Safari5.1-6 */
+                background: radial-gradient(ellipse at center, #cc3535 1%,#e88c0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+
+                border-radius: 50%; 
+
+                .fa-chevron-right{
+                    color: white; 
+                    font-size: 1.3rem; 
+                }
+            }
         }
     }
 }
