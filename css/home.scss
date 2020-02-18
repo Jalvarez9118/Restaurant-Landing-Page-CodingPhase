@@ -48,7 +48,7 @@ html{
                         display: block;
                         transition: color .3s ease-in-out; 
                         &:hover{
-                            color: $menu-item-hover; 
+                            color: $food-btn; 
                         }
                     }
                     
@@ -212,6 +212,113 @@ html{
             }
         }
     }
+}
+
+
+#food-preview{
+    background: $menu-border-bottom;
+    padding: 100px; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center; 
+
+    h2{
+        text-align: center;
+    }
+
+    .button-rounded{
+        background: $food-btn;    
+        color: white; 
+        display: inline-block;  // DOESNT take up entire row width 
+        padding: 15px; 
+        border-radius: 30px; 
+        margin-bottom: 100px; 
+    }
+
+    .food-slider{
+        width: 100%;
+        max-width: 1400px; 
+        display: flex; 
+        
+        .slide{
+            width: 20%; // we will have 5 slides to display 
+            position: relative; 
+            height: 500px; 
+            cursor: pointer;
+            
+            &:hover{
+                .background{
+                    background: $food-btn; 
+                    transform: translate3d(0, -60px, 0); 
+                }
+
+                .content{
+                    .food-title{
+                        color: white;                          
+                    }
+
+                    .food-description{
+                        color: white; 
+                    }
+                }
+            }
+
+            .background{
+                background: white;
+                top: 0; 
+                bottom: 0; 
+                height: 100%; 
+                width: 100%; 
+                z-index: 1; 
+                position: absolute;  
+                transition: .3s ease-in-out;            
+            }
+
+            .content{
+                position: absolute;
+                z-index: 2;                 
+                padding: 20px;   
+                width: 90%;   
+                display: flex; 
+                flex-direction: column;   
+                align-items: center;   
+                transition: all .3s ease-in-out;      
+
+                .food-title{
+                    font-size: 2rem; 
+                    font-weight: 900; 
+                    margin-bottom: 3rem; 
+                    color: $food-btn; 
+                    transition: all .3s ease-in-out;
+                }
+
+                .food-description{
+                    font-size: .8rem;
+                    font-weight: 400; 
+                    margin-bottom: 3rem; 
+                    line-height: 1.8; 
+                    color: $address-color; 
+                    transition: all .3s ease-in-out;  
+                }
+            }
+
+            img{
+                width: 95%; 
+                max-width: 250px; 
+            }
+        }
+    }
+}
+
+
+
+
+// GLOBAL h2 
+h2{
+    font-size: 3rem; 
+    font-weight: 700;
+    margin-bottom: 50px; 
 }
 
 
