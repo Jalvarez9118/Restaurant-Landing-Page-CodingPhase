@@ -263,7 +263,7 @@ html {
   line-height: 1.7;
   color: #7a8d99;
   font-size: 1.1rem;
-  margin: 2rem;
+  margin: 3rem;
 }
 
 #information .info .about-link {
@@ -328,6 +328,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 #food-preview h2 {
@@ -343,12 +344,53 @@ html {
   margin-bottom: 100px;
 }
 
-#food-preview .food-slider {
+#food-preview .container {
   width: 100%;
   max-width: 1400px;
+  position: relative;
+}
+
+#food-preview .container .left-btn, #food-preview .container .right-btn {
+  background: #cc35359f;
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  display: inline-block;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#food-preview .container .left-btn {
+  left: -35px;
+}
+
+#food-preview .container .right-btn {
+  right: -35px;
+}
+
+#food-preview .food-slider {
+  width: 100%;
+  max-width: 1400px;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#food-preview .food-slider .sliding-system {
+  white-space: nowrap;
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
 }
 
 #food-preview .food-slider .slide {
@@ -356,12 +398,14 @@ html {
   position: relative;
   height: 500px;
   cursor: pointer;
+  display: inline-block;
+  white-space: normal;
 }
 
 #food-preview .food-slider .slide:hover .background {
   background: #e88c0b;
-  -webkit-transform: translate3d(0, -60px, 0);
-          transform: translate3d(0, -60px, 0);
+  -webkit-transform: translate3d(0, -210px, 0);
+          transform: translate3d(0, -210px, 0);
 }
 
 #food-preview .food-slider .slide:hover .content .food-title {
@@ -399,8 +443,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 #food-preview .food-slider .slide .content .food-title {
@@ -408,8 +450,6 @@ html {
   font-weight: 900;
   margin-bottom: 3rem;
   color: #e88c0b;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 #food-preview .food-slider .slide .content .food-description {
@@ -418,8 +458,6 @@ html {
   margin-bottom: 3rem;
   line-height: 1.8;
   color: #7a8d99;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 #food-preview .food-slider .slide img {
@@ -430,7 +468,7 @@ html {
 h2 {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 /*!

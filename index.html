@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="stylesheet" href="sass/styles.scss"> -->
     <script src="https://use.fontawesome.com/88d424c6a6.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="animate.min.css">
+    <!-- <link rel="stylesheet" href="animate.min.css"> -->
 
 </head>
 
@@ -105,107 +105,196 @@
         <div class="button-rounded">
             View Our Menu
         </div>
-        <div class="food-slider">
-            <div class="slide">
-                <div class="background">
-                    <!-- This will be behind the .content below. Will appear with hover animation -->
-                </div>
-                <div class="content">
-                    <div class="food-title">
-                        Starters
-                    </div>
-                    <p class="food-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
-                        reprehenderit
-                        magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos eaque,
-                        architecto consectetur veniam consequatur similique!
-                    </p>
-                    <div class="food-image">
-                        <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png" alt="">
-                    </div>
-                </div>
+
+        <div class="container">
+            <div class="right-btn" id="rightBtn">
+                <i class="fa fa-chevron-right"></i>
             </div>
-            <div class="slide">
-                <div class="background">
-                    <!-- This will be behind the .content below. Will appear with hover animation -->
-                </div>
-                <div class="content">
-                    <div class="food-title">
-                        Starters
-                    </div>
-                    <p class="food-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
-                        reprehenderit
-                        magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos eaque,
-                        architecto consectetur veniam consequatur similique!
-                    </p>
-                    <div class="food-image">
-                        <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png" alt="">
-                    </div>
-                </div>
+            <div class="left-btn" id="leftBtn">
+                <i class="fa fa-chevron-left"></i>
             </div>
-            <div class="slide">
-                <div class="background">
-                    <!-- This will be behind the .content below. Will appear with hover animation -->
-                </div>
-                <div class="content">
-                    <div class="food-title">
-                        Starters
+            <div class="food-slider">
+                <div class="sliding-system" id="slideSystem">
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Starters
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="img/kisspng-buffalo-wing-nachos-onion-ring-wrap-macaroni-and-c-sticks-5ac414802191e5.5826062815227997441375.png"
+                                    alt="">
+                            </div>
+                        </div>
                     </div>
-                    <p class="food-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
-                        reprehenderit
-                        magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos eaque,
-                        architecto consectetur veniam consequatur similique!
-                    </p>
-                    <div class="food-image">
-                        <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png" alt="">
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Burgers
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="background">
-                    <!-- This will be behind the .content below. Will appear with hover animation -->
-                </div>
-                <div class="content">
-                    <div class="food-title">
-                        Starters
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Entrees
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="img/kisspng-sausage-steak-pasta-cooking-meat-cooked-meat-png-clipart-5a7978ff037984.4231625115179102710142.png"
+                                    alt="" style="position: absolute; top: 85%; left: 30px; width: 75%;">
+                            </div>
+                        </div>
                     </div>
-                    <p class="food-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
-                        reprehenderit
-                        magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos eaque,
-                        architecto consectetur veniam consequatur similique!
-                    </p>
-                    <div class="food-image">
-                        <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png" alt="">
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Sides
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="img/kisspng-greek-salad-vinaigrette-caesar-salad-fruit-salad-salad-5abc15ffee6593.7693796115222758399765.png"
+                                    alt="" style="position: absolute; top: 80%; left: 30px; width: 75%;">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="background">
-                    <!-- This will be behind the .content below. Will appear with hover animation -->
-                </div>
-                <div class="content">
-                    <div class="food-title">
-                        Starters
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Desserts
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="img/kisspng-coffee-tiramisu-ladyfinger-italian-cuisine-chocola-chocolate-cake-with-spoon-5a8cf6646a3186.994008741519187556435.png"
+                                    alt="" style="position: absolute; top: 85%; left: 30px; width: 75%;">
+                            </div>
+                        </div>
                     </div>
-                    <p class="food-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
-                        reprehenderit
-                        magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos eaque,
-                        architecto consectetur veniam consequatur similique!
-                    </p>
-                    <div class="food-image">
-                        <img src="https://i.ya-webdesign.com/images/hamburger-and-fries-png-4.png" alt="">
+                    <!-- ******* -->
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Fountain
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="img/5a34b4d8ca3042.7165704415134036088282.png" alt=""
+                                    style="width: 35%; position:absolute; left: 33%; top: 85%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Kids
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime
+                                dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="img/5a2b5796de7717.5928634515127899109112.png" alt=""
+                                    style="position: absolute; top: 80%; left: 20%; width: 60%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="background">
+                            <!-- This will be behind the .content below. Will appear with hover animation -->
+                        </div>
+                        <div class="content">
+                            <div class="food-title">
+                                Wine
+                            </div>
+                            <p class="food-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam? Culpa harum
+                                reprehenderit
+                                magnam quia explicabo perferendis sapiente quisquam ipsa ea tenetur maxime
+                                dignissimos
+                                eaque,
+                                architecto consectetur veniam consequatur similique!
+                            </p>
+                            <div class="food-image">
+                                <img src="img/5a2187b16157e1.4606110915121468653987.png" alt=""
+                                    style="position: absolute; top: 85%; left: 33%; width: 42%;">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </section>
 
+    move();
 
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
