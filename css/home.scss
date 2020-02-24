@@ -1,5 +1,21 @@
 @import "variables"; 
 
+// ******************* MEDIA QUERIES ********************
+@media only screen and (max-width: 1200px){
+
+    .information{
+        .info{
+            h2{
+                width: 80%;
+                text-align: center;
+            
+            }
+                
+        }
+    }
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -148,6 +164,7 @@ html{
 
         img{
             width: 100%; 
+            // height: 100vh;
             // max-height: 580px; 
             // object-fit: cover; // fits the image to dimension given
             object-position: 0 -130px; // left/right top/bottom
@@ -377,5 +394,6 @@ h2{
     margin-bottom: 3rem; 
     // margin-bottom: 50px; 
 }
+
 
 

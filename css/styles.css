@@ -53,6 +53,13 @@ table {
   border-spacing: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .information .info h2 {
+    width: 80%;
+    text-align: center;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

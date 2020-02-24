@@ -1,52 +1,72 @@
-var r = -20;
-var l = +20;
+// var r = -20;
 
-var shiftR = `${r}%, 0, 0`;
-
-var shiftL = "-0%, 0, 0";
 
 var slideStyle = document.getElementById("slideSystem").style.transform;
 
+// hold sliders in array variable
+var slide = document.querySelectorAll(".slide");
 
-// RIGHT SLIDE MOVE
-var right = document.getElementById("rightBtn").addEventListener("click", () => {
+// hold right button
+var buttonRight = document.querySelectorAll(".btn")[0];
 
-    document.getElementById("slideSystem").style.transform = `translate3d(${shiftR})`;
-    console.log(r);
-    var a = 20;
-    shiftR = `$({r} (- a))%, 0, 0`
+// hold left button
+var buttonLeft = document.querySelectorAll(".btn")[1];
 
-    console.log(shiftR);
-    console.log(r);
-});
+var clicked = false;
 
 
 
-// LEFT SLIDE MOVE
-var left = document.getElementById("leftBtn").addEventListener("click", () => {
-    document.getElementById("slideSystem").style.transform = `translate3d( ${shiftL})`;
-});
+// for (var i = 0; i < slide.length; i++) {
+//     if (butRight.addEventListener("click", function () {
+//         clicked = true;
+//         console.log("clicked right");
+//     })) {
+//         document.getElementById("slideSystem").style.transform = `translate3d(${shiftR})`;
+//     }
 
-
-
-
-
-
-
-
-
-
-// var right = document.getElementById("rightBtn").addEventListener("click", function () {
-//     document.getElementById("slideSystem").style.transform = "translate3d(-20%, 0, 0)"
-// });
-
-
-
-// slide left by 1 slide (20%)
-// function move() {
-//     document.getElementById("slideSystem").style.transform = "translate3d(-20%, 0, 0)";
-// };
-
-// var let = () => {
-
+//     if (butLeft) {
+//         document.getElementById("slideSystem").style.transform = `translate3d( ${shiftL})`;
+//     }
 // }
+var r = -20;
+var shiftRight = `${r}%, 0, 0`;
+
+if (buttonRight.addEventListener("click", function () {
+
+    clicked = true;
+    {
+        document.getElementById("slideSystem").style.transform = `translate3d(${shiftRight})`;
+        // shiftRight = console.log(r + " - r after run");
+
+        r = r - 20;
+        shiftRight = `${r}%, 0, 0`;
+        console.log(r + " - r after run");
+        // shiftLeft = shiftRight;
+    }
+}));
+
+
+
+var l = 0;
+// var l = +20;
+// var shiftLeft = shiftRight;
+var shiftLeft = `${l}%, 0, 0`;
+console.log(shiftLeft + " - after = to shiftRight");
+
+if (buttonLeft.addEventListener("click", function () {
+    clicked = true;
+    {
+        document.getElementById("slideSystem").style.transform = `translate3d(${shiftLeft})`;
+        console.log(shiftLeft + " 1st check left");
+        // shiftLeft = console.log(r + " - l after run");
+
+        console.log(shiftLeft + " - after 1st check");
+        console.log(l);
+        l = l + 20;
+        console.log(l + " - after l = l + 20");
+        shiftLeft = `${l}%, 0, 0`;
+        console.log(l + " - l after run");
+    }
+}));
+
+
